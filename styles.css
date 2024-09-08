@@ -841,6 +841,8 @@ footer {
     .nav__btns {
         display: flex;
         flex: 1;
+        gap: 10px;
+
     }
 
     .nav__btns .btn {
