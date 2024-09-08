@@ -29,9 +29,13 @@
     border-radius: 15px;
 }
 
+
+
 .section__header{
+    background: linear-gradient(90deg, #7ed56f, #ffd700);
+    -webkit-background-clip: text;
+    color: transparent;
     font-size: 3rem;
-    color: var(--primary-color);
     text-align: center;
     font-weight: 800;
 }
@@ -301,77 +305,6 @@ nav {
     background-color: var(--primary-color-dark);
 }
 
-/*.experience__container :is(.section__subheader, .section__header) {*/
-/*    text-align: center;*/
-/*    max-width: 600px;*/
-/*    margin-inline: auto;*/
-/*}*/
-
-/*.experience__content {*/
-/*    max-width: 1024px;*/
-/*    margin-inline: auto;*/
-/*    margin-top: 4rem;*/
-/*    position: relative;*/
-/*    isolation: isolate;*/
-/*}*/
-
-/*.experience__content img {*/
-/*    max-width: 300px;*/
-/*    margin-inline: auto;*/
-/*    opacity: 0.5;*/
-/*}*/
-
-/*.experience__card img{*/
-/*    max-width: 50px;*/
-/*}*/
-
-/*.experience__card {*/
-/*    position: absolute;*/
-/*    max-width: 200px;*/
-/*    margin-top: -50px;*/
-/*}*/
-
-/*.experience__card h4 {*/
-/*    font-size: 1rem;*/
-/*    font-weight: 700;*/
-/*    color: var(--text-dark);*/
-/*}*/
-
-/*.experience__card:nth-child(1) {*/
-/*    top: 5rem;*/
-/*    left: 1rem;*/
-/*}*/
-
-/*.experience__card:nth-child(2) {*/
-/*    top: 60%;*/
-/*    left: 1rem;*/
-/*    transform: translateY(-50%);*/
-/*}*/
-
-/*.experience__card:nth-child(3) {*/
-/*    bottom: 5rem;*/
-/*    left: 1rem;*/
-/*}*/
-
-/*.experience__card:nth-child(4) {*/
-/*    top: 5rem;*/
-/*    right: 1rem;*/
-/*    text-align: right;*/
-/*}*/
-
-/*.experience__card:nth-child(5) {*/
-/*    top: 50%;*/
-/*    right: 1rem;*/
-/*    transform: translateY(-50%);*/
-/*    text-align: right;*/
-/*}*/
-
-/*.experience__card:nth-child(6) {*/
-/*    bottom: 5rem;*/
-/*    right: 1rem;*/
-/*    text-align: right;*/
-/*}*/
-
 .experience__container :is(.section__subheader, .section__header) {
     text-align: center;
     max-width: 600px;
@@ -379,20 +312,24 @@ nav {
 }
 
 .experience__content {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 1rem; 
     max-width: 1024px;
     margin-inline: auto;
     margin-top: 4rem;
-    position: relative;
-    padding-bottom: 200px;
+    position: relative; 
+    padding-bottom: 10px; 
 }
 
+
 .experience__card {
-    position: absolute;
     max-width: 200px;
     padding: 1rem;
-    border-radius: 15px; 
-    background-color: #ffffff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
@@ -408,18 +345,18 @@ nav {
 }
 
 .card-1 {
-    top: 50%;
-    left: 10%;
+    grid-column: 1 / 2; 
+    grid-row: 2 / 2; 
 }
 
 .card-2 {
-    top: -5%;
-    left: 39%;
+    grid-column: 2 / 2; 
+    grid-row: 1 / 2; 
 }
 
 .card-3 {
-    top: 50%;
-    left: 70%;
+    grid-column: 3 / 4; 
+    grid-row: 2 / 2; 
 }
 
 .arrival__grid {
@@ -441,7 +378,7 @@ nav {
 }
 
 .arrival__card:hover {
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg, #7ed56f, #ffd700);
     box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
 }
 
@@ -454,7 +391,7 @@ nav {
     font-size: 1rem;
     font-weight: 500;
     color: var(--white);
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg, #7ed56f, #ffd700);
 }
 
 .arrival__card img {
@@ -536,7 +473,7 @@ nav {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--primary-color);
+    background: linear-gradient(90deg, #7ed56f, #ffd700);
 }
 
 .feature__card .btn {
@@ -581,7 +518,7 @@ nav {
 }
 
 .membership__card:hover {
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg, #7ed56f, #ffd700);
 }
 
 .membership__card h4 {
@@ -608,7 +545,7 @@ nav {
 .membership__card li span {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--primary-color);
+    background: linear-gradient(90deg, #7ed56f, #ffd700);
     transition: 0.3s;
 }
 
