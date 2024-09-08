@@ -60,7 +60,8 @@
 }
 
 .btn{
-    padding: 1rem 2rem;
+    justify-content: flex-start;
+    padding: 1rem 3.5rem;
     outline: none;
     border: none;
     font-size: 1rem;
@@ -304,7 +305,7 @@ nav {
 }
 
 .btn{
-    gap: 2rem;
+    gap: 1rem;
     background-color: var(--primary-color-dark);
 }
 
@@ -728,51 +729,60 @@ nav {
 .contact__container :is(input, textarea) {
     padding: 1rem 0.75rem;
     outline: none;
-    border: 1px solid var(--primary-color);
+    border: 0.9px solid black;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     color: var(--text-dark);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .contact__container .btn {
     max-width: fit-content;
     margin-inline: auto;
 }
-
-.footer__container {
-    padding-block: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-direction: column;
-    background-color: var(--primary-color);
-}
-
-.footer__container p {
-    color: var(--white);
-    text-align: center;
-    line-height: 1.5rem;
-}
-
-.footer__socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.footer__socials a {
-    padding: 6px 8px;
-    font-size: 1.125rem;
-    color: var(--white);
-    border: 1px solid var(--white);
-    background-color: var(--primary-color);
-    border-radius: 100%;
-}
-
-.footer__socials a:hover {
+footer {
     background-color: var(--primary-color-dark);
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1;
+    padding: 15px;
+    min-width: 220px;
+}
+
+.footer-col h4 {
+    margin-top: 0;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
 }
 
 
@@ -953,6 +963,13 @@ nav {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-section, .footer-section:nth-child(2), .footer-section:last-child {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
 }
 @media (width > 1024px) {
     .feature__grid {
@@ -967,6 +984,108 @@ nav {
         padding: 2rem;
     }
 }
+
+.contact-form {
+    margin-left: -220px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 180%;
+    max-width: 1800px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.form-column {
+    width: 42%;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    box-sizing: border-box;
+    height: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-message {
+    line-height: 5px;
+    height: 160px;
+}
+
+.input-message::placeholder {
+    padding-top: 0;
+    position: relative;
+    top: -54px;
+}
+
+textarea {
+    height: 148px;
+}
+
+button {
+    background-color: #4C9A8A;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.button-contact-us {
+    margin-left: 30px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    margin-top: 42px;
+    padding: 1rem 2.8rem;
+    font-size: 21px;
+}
+
+button:hover {
+    background-color: #4C9A8A;
+}
+
+.gradient-circle {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #7ed56f, #ffd700);
+    opacity: 0.5;
+}
+
+.top-right {
+    top: -20px;
+    right: -20px;
+}
+
+.bottom-left {
+    bottom: -20px;
+    left: -20px;
+}
+
+.contact-text {
+    background: linear-gradient(90deg, #6fd2d5, #ffd700);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 54px;
+}
+
 
 
 
