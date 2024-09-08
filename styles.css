@@ -50,7 +50,8 @@
 }
 
 .btn{
-    padding: 1rem 2rem;
+    justify-content: flex-start;
+    padding: 1rem 3.5rem;
     outline: none;
     border: none;
     font-size: 1rem;
@@ -297,7 +298,7 @@ nav {
 }
 
 .btn{
-    gap: 2rem;
+    gap: 1rem;
     background-color: var(--primary-color-dark);
 }
 
@@ -705,11 +706,11 @@ nav {
 .contact__container :is(input, textarea) {
     padding: 1rem 0.75rem;
     outline: none;
-    border: 1px solid var(--primary-color);
+    border: 0.9px solid black;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     color: var(--text-dark);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .contact__container .btn {
@@ -944,6 +945,108 @@ nav {
         padding: 2rem;
     }
 }
+
+.contact-form {
+    margin-left: -220px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 180%;
+    max-width: 1800px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.form-column {
+    width: 42%;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    box-sizing: border-box;
+    height: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-message {
+    line-height: 5px;
+    height: 160px;
+}
+
+.input-message::placeholder {
+    padding-top: 0;
+    position: relative;
+    top: -54px;
+}
+
+textarea {
+    height: 148px;
+}
+
+button {
+    background-color: #4C9A8A;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.button-contact-us {
+    margin-left: 30px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    margin-top: 42px;
+    padding: 1rem 2.8rem;
+    font-size: 21px;
+}
+
+button:hover {
+    background-color: #4C9A8A;
+}
+
+.gradient-circle {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #7ed56f, #ffd700);
+    opacity: 0.5;
+}
+
+.top-right {
+    top: -20px;
+    right: -20px;
+}
+
+.bottom-left {
+    bottom: -20px;
+    left: -20px;
+}
+
+.contact-text {
+    background: linear-gradient(90deg, #6fd2d5, #ffd700);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 54px;
+}
+
 
 
 
